@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'kindle-linear-algebra-for-newcomers'
-copyright = u'2014, phasetr'
+copyright = u'2014, 相転移P'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -112,7 +112,7 @@ html_theme = 'default'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = u"理工系新入生のための線型代数入門--微分積分的観点から"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-#html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 #html_show_copyright = True
@@ -182,6 +182,11 @@ htmlhelp_basename = 'kindle-linear-algebra-for-newcomersdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
+# 言語の設定
+language = 'ja'
+
+# LaTeX の docclass 設定
+latex_docclass = {'manual': 'jsbook'}
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
@@ -263,10 +268,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'kindle-linear-algebra-for-newcomers'
-epub_author = u'phasetr'
-epub_publisher = u'phasetr'
-epub_copyright = u'2014, phasetr'
+epub_title = u'理工系新入生のための線型代数入門--微分積分的観点から'
+epub_author = u'相転移P'
+epub_publisher = u'相転移プロダクション'
+epub_copyright = u'2014, 相転移P'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'kindle-linear-algebra-for-newcomers'
@@ -327,4 +332,4 @@ epub_copyright = u'2014, phasetr'
 #epub_show_urls = 'inline'
 
 # If false, no index is generated.
-#epub_use_index = True
+epub_use_index = False

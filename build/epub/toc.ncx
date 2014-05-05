@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>理工系新入生のための線型代数入門--微分積分的観点から</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>理工系新入生のための線型代数入門&#8211;微分積分的観点から</text>
+      </navLabel>
+      <content src="index.html" />
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>はじめに</text>
+      </navLabel>
+      <content src="preface.html" />
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>はじめに</text>
+        </navLabel>
+        <content src="preface.html" />
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>自己紹介</text>
+        </navLabel>
+        <content src="preface.html#id3" />
+      </navPoint>
+      <navPoint id="navPoint5" playOrder="4">
+        <navLabel>
+          <text>活動目的</text>
+        </navLabel>
+        <content src="preface.html#id6" />
+      </navPoint>
+      <navPoint id="navPoint6" playOrder="5">
+        <navLabel>
+          <text>有料出版の理由</text>
+        </navLabel>
+        <content src="preface.html#id8" />
+      </navPoint>
+      <navPoint id="navPoint7" playOrder="6">
+        <navLabel>
+          <text>本の内容</text>
+        </navLabel>
+        <content src="preface.html#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint8" playOrder="7">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="introduction.html" />
+    </navPoint>
+    <navPoint id="navPoint9" playOrder="8">
+      <navLabel>
+        <text>What is linear algebra?</text>
+      </navLabel>
+      <content src="what_is_linear_algebra.html" />
+      <navPoint id="navPoint10" playOrder="8">
+        <navLabel>
+          <text>What is linear algebra?</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html" />
+      </navPoint>
+      <navPoint id="navPoint11" playOrder="9">
+        <navLabel>
+          <text>Abstract definition of vectors</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#abstract-definition-of-vectors" />
+      </navPoint>
+      <navPoint id="navPoint12" playOrder="10">
+        <navLabel>
+          <text>Examples of linear spaces</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#examples-of-linear-spaces" />
+      </navPoint>
+      <navPoint id="navPoint13" playOrder="11">
+        <navLabel>
+          <text>Examples of finite, but higher dimensional spaces than three</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#examples-of-finite-but-higher-dimensional-spaces-than-three" />
+      </navPoint>
+      <navPoint id="navPoint14" playOrder="12">
+        <navLabel>
+          <text>Function as a vector</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#function-as-a-vector" />
+      </navPoint>
+      <navPoint id="navPoint15" playOrder="13">
+        <navLabel>
+          <text>Function spaces: examples of infinite dimensional spaces</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#function-spaces-examples-of-infinite-dimensional-spaces" />
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="14">
+        <navLabel>
+          <text>Linear maps, functionals</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#linear-maps-functionals" />
+      </navPoint>
+      <navPoint id="navPoint17" playOrder="15">
+        <navLabel>
+          <text>Eigenvalues, eigenvectors</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#eigenvalues-eigenvectors" />
+      </navPoint>
+      <navPoint id="navPoint18" playOrder="16">
+        <navLabel>
+          <text>Mathematical application of linear algebra</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#mathematical-application-of-linear-algebra" />
+      </navPoint>
+      <navPoint id="navPoint19" playOrder="17">
+        <navLabel>
+          <text>Physical application</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#physical-application" />
+      </navPoint>
+      <navPoint id="navPoint20" playOrder="18">
+        <navLabel>
+          <text>Linear algebra and statistics</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#linear-algebra-and-statistics" />
+      </navPoint>
+      <navPoint id="navPoint21" playOrder="19">
+        <navLabel>
+          <text>Linear algebra and computer science</text>
+        </navLabel>
+        <content src="what_is_linear_algebra.html#linear-algebra-and-computer-science" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint22" playOrder="20">
+      <navLabel>
+        <text>Integration</text>
+      </navLabel>
+      <content src="integration.html" />
+      <navPoint id="navPoint23" playOrder="20">
+        <navLabel>
+          <text>Integration</text>
+        </navLabel>
+        <content src="integration.html" />
+      </navPoint>
+      <navPoint id="navPoint24" playOrder="21">
+        <navLabel>
+          <text>Let’s define inner products!</text>
+        </navLabel>
+        <content src="integration.html#lets-define-inner-products" />
+        <navPoint id="navPoint25" playOrder="21">
+          <navLabel>
+            <text>Let’s define inner products!</text>
+          </navLabel>
+          <content src="integration.html#lets-define-inner-products" />
+        </navPoint>
+        <navPoint id="navPoint26" playOrder="22">
+          <navLabel>
+            <text>Inner products in higher dimensional spaces</text>
+          </navLabel>
+          <content src="integration.html#inner-products-in-higher-dimensional-spaces" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint27" playOrder="23">
+        <navLabel>
+          <text>Axiom for inner products</text>
+        </navLabel>
+        <content src="integration.html#axiom-for-inner-products" />
+      </navPoint>
+      <navPoint id="navPoint28" playOrder="24">
+        <navLabel>
+          <text>Examples of inner products</text>
+        </navLabel>
+        <content src="integration.html#examples-of-inner-products" />
+      </navPoint>
+      <navPoint id="navPoint29" playOrder="25">
+        <navLabel>
+          <text>Physics for the space </text>
+        </navLabel>
+        <content src="integration.html#physics-for-the-space" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint30" playOrder="26">
+      <navLabel>
+        <text>Differentiation</text>
+      </navLabel>
+      <content src="differentiation.html" />
+      <navPoint id="navPoint31" playOrder="26">
+        <navLabel>
+          <text>Differentiation</text>
+        </navLabel>
+        <content src="differentiation.html" />
+      </navPoint>
+      <navPoint id="navPoint32" playOrder="27">
+        <navLabel>
+          <text>Taylor expansion</text>
+        </navLabel>
+        <content src="differentiation.html#taylor-expansion" />
+      </navPoint>
+      <navPoint id="navPoint33" playOrder="28">
+        <navLabel>
+          <text>Unitary representation of a group</text>
+        </navLabel>
+        <content src="differentiation.html#unitary-representation-of-a-group" />
+        <navPoint id="navPoint34" playOrder="28">
+          <navLabel>
+            <text>Unitary representation of a group</text>
+          </navLabel>
+          <content src="differentiation.html#unitary-representation-of-a-group" />
+        </navPoint>
+        <navPoint id="navPoint35" playOrder="29">
+          <navLabel>
+            <text>Fourier expansion</text>
+          </navLabel>
+          <content src="differentiation.html#fourier-expansion" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint36" playOrder="30">
+        <navLabel>
+          <text>Analitical mechanics and quantum mechanics</text>
+        </navLabel>
+        <content src="differentiation.html#analitical-mechanics-and-quantum-mechanics" />
+      </navPoint>
+      <navPoint id="navPoint37" playOrder="31">
+        <navLabel>
+          <text>Physics and representation theory</text>
+        </navLabel>
+        <content src="differentiation.html#physics-and-representation-theory" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint38" playOrder="32">
+      <navLabel>
+        <text>Variational problem: mixture of differentiation and integration</text>
+      </navLabel>
+      <content src="variational_problem_mixture_of_differentiation_and_integration.html" />
+      <navPoint id="navPoint39" playOrder="32">
+        <navLabel>
+          <text>Variational problem: mixture of differentiation and integration</text>
+        </navLabel>
+        <content src="variational_problem_mixture_of_differentiation_and_integration.html" />
+      </navPoint>
+      <navPoint id="navPoint40" playOrder="33">
+        <navLabel>
+          <text>Examples of variational problems</text>
+        </navLabel>
+        <content src="variational_problem_mixture_of_differentiation_and_integration.html#examples-of-variational-problems" />
+        <navPoint id="navPoint41" playOrder="33">
+          <navLabel>
+            <text>Examples of variational problems</text>
+          </navLabel>
+          <content src="variational_problem_mixture_of_differentiation_and_integration.html#examples-of-variational-problems" />
+        </navPoint>
+        <navPoint id="navPoint42" playOrder="34">
+          <navLabel>
+            <text>shortest time problem</text>
+          </navLabel>
+          <content src="variational_problem_mixture_of_differentiation_and_integration.html#shortest-time-problem" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint43" playOrder="35">
+        <navLabel>
+          <text>Mathematical formulatrion: functionals, linear operators</text>
+        </navLabel>
+        <content src="variational_problem_mixture_of_differentiation_and_integration.html#mathematical-formulatrion-functionals-linear-operators" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint44" playOrder="36">
+      <navLabel>
+        <text>References</text>
+      </navLabel>
+      <content src="reference.html" />
+    </navPoint>
+  </navMap>
+</ncx>

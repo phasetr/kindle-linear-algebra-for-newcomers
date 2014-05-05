@@ -1,17 +1,9 @@
-Welcome to kindle-linear-algebra-for-newcomers' documentation!
-==============================================================
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-   preface
-   linear_algebra_for_newcomers
-   reference
+=====================================================
+理工系新入生のための線型代数入門--微分積分的観点から
+=====================================================
 
 著者情報
---------
+========
 
 :著者: 相転移P
 
@@ -20,3 +12,18 @@ Contents:
 :無料メルマガ登録: http://goo.gl/o0rK1T
 
 :サイト: http://phasetr.com
+
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 2
+
+   preface
+   introduction
+   what_is_linear_algebra
+   integration
+   differentiation
+   variational_problem_mixture_of_differentiation_and_integration
+   reference

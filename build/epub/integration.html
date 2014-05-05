@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Integration</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="differentiation.html" title="Differentiation"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="what_is_linear_algebra.html" title="What is linear algebra?"
+             accesskey="P">前へ</a> |</li>
+        <li><a href="index.html">理工系新入生のための線型代数入門--微分積分的観点から</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="integration">
+<h1>Integration</h1>
+<div class="section" id="lets-define-inner-products">
+<h2>Let’s define inner products!</h2>
+<p>In this talk we mainly consider real linear spaces, e.g.,
+<img class="math" src="_images/math/48bb97d434ed10923b31178054fc265df6e2908b.png" alt="\mathbb{R}^d"/>. You may consider complex linear spaces if you know
+complex numbers.</p>
+<p>We assume you agree with the existence of higher dimensional spaces. We
+want to define angles and length of vectors as in two or three
+dimensional ones. One reason to consider them is application to physics.
+There is a projection hypothesis in quantum mechanics: this projection
+comes from orthogonal projection, and it is just a shadow of objects in
+three dimensional objects when one shine a light from above.</p>
+<p>At first we consider how to define angles between infinite dimensional
+vectors, especially, functions. Take a look at the following inner
+product formula in high school.</p>
+<div class="math">
+<p><img src="_images/math/4e181f0f87c30589a3c52e30ba0dcac508e9f2db.png" alt="\begin{align*}
+ a \cdot b
+ =
+ \left|a\right| \, \left|b\right| \cos \theta.\end{align*}"/></p>
+</div><p>We deform this:</p>
+<div class="math">
+<p><img src="_images/math/aa3e005c00744e62cdb1eaf3dad8f092bf7e86f0.png" alt="\begin{align*}
+ \cos \theta
+ =
+ \frac{ a \cdot b} {\left|a\right| \, \left|b\right|}.\end{align*}"/></p>
+</div><p>We can derive an angle <img class="math" src="_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/> from the value of the cosine
+function. Lengths <a class="footnote-reference" href="#id4" id="id1">[4]</a> of vectors can be computed by inner products,
+from <img class="math" src="_images/math/009b5ed7cb91a4129e06e2eb6d0c8b1acbc7d2ea.png" alt="\left|a\right|^2 = a \cdot a"/>. So we can derive angles if we
+can define an inner product. Hence we have to define an inner product.
+Note that an inner product is not a divine concept.</p>
+<p>At first we write an inner product in <img class="math" src="_images/math/ba438cedaa8f58c80eb239e792bd4cdeba1910ac.png" alt="\mathbb{R}^3"/>. We write a
+vector <img class="math" src="_images/math/3f743f41e366856b07d91acb47d8d2f0eea3877a.png" alt="f = (f_1, f_2, f_3)"/> as <img class="math" src="_images/math/6457571158ac3e295aa4a0ef3c13bc5f8f9877dc.png" alt="f = (f(1), f(2), f(3))"/> for
+later use. This is just a notational convention. We define an inner
+product for three dimensional vectors <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f"/> and <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g"/> as</p>
+<div class="math">
+<p><img src="_images/math/08f3365364fa64e717bf4715e95befc4a3dfc485.png" alt="\begin{align*}
+ f \cdot g
+ :=
+ \left\langle f,\,g\right\rangle
+ :=
+ \sum_{k=1}^3 f(k)g(k).\end{align*}"/></p>
+</div><p>The first notation is one in high school. The second is usual one when
+considering a functional inner product. There are several notations for
+an inner product such as</p>
+<div class="math">
+<p><img src="_images/math/e8b3dc4fd99ebd89545c9186e0f22bc8b7b1937a.png" alt="\begin{align*}
+ \left (f, g\right), \quad \left (f | g\right), \quad \langle f | g \rangle.\end{align*}"/></p>
+</div><p>The last one is the famous Dirac’s braket notation in quantum mechanics.</p>
+<div class="section" id="inner-products-in-higher-dimensional-spaces">
+<h3>Inner products in higher dimensional spaces</h3>
+<p>We wrote an inner product as</p>
+<div class="math">
+<p><img src="_images/math/600199b5728d85f54717572750350c76a7a25b63.png" alt="\begin{align*}
+ \langle f , g \rangle
+ =
+ \sum_{k=1}^3 f(k)g(k).\end{align*}"/></p>
+</div><p>Since there is no reason to restrict our consideration to a three
+dimensional space we generalize a dimension three to general <img class="math" src="_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/>.</p>
+<div class="math">
+<p><img src="_images/math/cf67ce15ebf72f0225e05316eee2aff5421859c5.png" alt="\begin{align*}
+ \langle f , g \rangle
+ =
+ \sum_{k=1}^d f(k)g(k),\end{align*}"/></p>
+</div><p>where we set</p>
+<div class="math">
+<p><img src="_images/math/be1141cf2160f864b46ab345ed99ca62463a6818.png" alt="\begin{align*}
+ f = \left (f(1), f(2), \dots, f(d)\right), \quad
+ g = \left (g(1), g(2), \dots, g(d)\right).\end{align*}"/></p>
+</div><p>If you want to consider one in <img class="math" src="_images/math/8634fbcb85c5687a20fba861322c8f888d67cbd1.png" alt="\mathbb{C}^d"/> you should set</p>
+<div class="math">
+<p><img src="_images/math/31cb7390eaa7781e39a4d790bb81bece3c0aa8f8.png" alt="\begin{align*}
+ \left\langle f,\,g\right\rangle
+ =
+ \sum_{k=1}^d \overline{f(k)} g(k)\end{align*}"/></p>
+</div><p>because it is desirable that a length (norm) of a vector is properly
+defined, i.e.,
+<img class="math" src="_images/math/fbda54f70e916424b6a00b1b64d63b4700d2abdd.png" alt="\left\Vert f\right\Vert^2 := \left\langle f,\,g\right\rangle \geq 0"/>.</p>
+<p>We take a limit <img class="math" src="_images/math/25eb6f014ca1fa60e8db49d814964ee4b5a59e65.png" alt="d \to \infty"/>. We face a problem whether a series
+converges or not, but we can overcome this by considering converging
+ones.</p>
+<div class="math">
+<p><img src="_images/math/4b7e1bb450c0e526c42f4255051f03557cf5c2e1.png" alt="\begin{align*}
+ \left\langle f,\,g\right\rangle
+ =
+ \sum_{k=1}^{\infty} f(k)g(k).\end{align*}"/></p>
+</div><p>A infinite dimensional vector <img class="math" src="_images/math/eb6007f91cd8b419303eb9e21bef7d697cb77793.png" alt="f = (f(1), f(2), \dots)"/> can be
+viewed as a sequence. In quantum mechanics we use sequences and matrices
+living in an infinite dimensional space when considering Heisenberg’s
+matricial mechanics.</p>
+<p>Note that our temporal task is to make how to define an inner product
+for functions. Let’s go back to a finite sum, think
+<img class="math" src="_images/math/4fe33a95c88417ee5bd18e93755329b4628f02c2.png" alt="1 = \Delta k"/>, and rewrite a sum as</p>
+<div class="math">
+<p><img src="_images/math/fff1b0ad38468142f4f79d3e0cedd7cd88dc683b.png" alt="\begin{align*}
+ \sum_{k=1}^{d} f(k)g(k) \Delta k.\end{align*}"/></p>
+</div><p>Rewrite <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> as <img class="math" src="_images/math/5b143fcd192754e636816f52d6334123863f8bab.png" alt="k/d"/> and <img class="math" src="_images/math/83db992a1bf9c6721470cff232c7842530571adb.png" alt="\Delta k"/> as <img class="math" src="_images/math/12f473e84d04440b4f694f931eec597fa6baa85e.png" alt="1/d"/>.
+Then we get a sum</p>
+<div class="math">
+<p><img src="_images/math/3c10524d797b8635ac25c83e2f3ef0e895ad7213.png" alt="\begin{align*}
+ \sum_{k=1}^{d} f \left( \frac{k}{d} \right) g \left( \frac{k}{d} \right) \frac{1}{d}.\end{align*}"/></p>
+</div><p>This is an expression, known as 区分求積法 in high school <a class="footnote-reference" href="#id5" id="id2">[5]</a>.</p>
+<p>Taking a limit <img class="math" src="_images/math/25eb6f014ca1fa60e8db49d814964ee4b5a59e65.png" alt="d \to \infty"/> the above sum becomes an integral.</p>
+<div class="math">
+<p><img src="_images/math/807e2b2a05fde3e74c00bdf64d17b439f7f06817.png" alt="\begin{align*}
+ \langle f, g \rangle
+ =
+ \int_{0}^{1} f(x) g(x) dx.\end{align*}"/></p>
+</div><p>Now the interval is <img class="math" src="_images/math/ab178d831a786b92cb4c9ddc2d33578223036f98.png" alt="[0, 1]"/> here, but we can take any
+(measurable) subset of <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</p>
+<p>Hence we find that an inner product for functions can be defined using
+integral. In fact anything is good if it satisfies the axiom of an inner
+product.</p>
+<p>A linear space with inner product is called pre-Hilbert space. A
+pre-Hilbert space is called a Hilbert space if it is complete for metric
+induced by inner product. A Hilbert space is famous as a space where
+wave functions in quantum mechanics live.</p>
+</div>
+</div>
+<div class="section" id="axiom-for-inner-products">
+<h2>Axiom for inner products</h2>
+<p>Let <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> be a linear space and
+<img class="math" src="_images/math/d1d475749af1a5bbceaa11d8155be66451ce960d.png" alt="\left\langle\cdot,\,\cdot\right\rangle \colon L \times L \to \mathbb{R}"/>
+is a map of two variables. The pair
+<img class="math" src="_images/math/2e53849bd1af568df21ac1f5092f3079809d2273.png" alt="\left (L, \left\langle\cdot,\,\cdot\right\rangle\right)"/> is an
+inner product space if the map
+<img class="math" src="_images/math/3539372626abf7a34a1e2fd631ec77f2b12bab4d.png" alt="\left\langle\cdot,\,\cdot\right\rangle"/> is an inner product,
+i.e., it satisfies the following properties.</p>
+<ol class="arabic">
+<li><p class="first">Symmetry:</p>
+<div class="math">
+<p><img src="_images/math/896a986fc64a5424334e88cf774906bed6ed11d3.png" alt="\begin{align*}
+\left\langle f, \, g \right\rangle
+=
+\left\langle g, \, f \right\rangle
+\end{align*}"/></p>
+</div></li>
+<li><p class="first">Linearity in the second argument:</p>
+<div class="math">
+<p><img src="_images/math/3a3b337aa2cc116ef4b05e53971f34a5fa7c011b.png" alt="\begin{align*}
+   \left\langle f,\,\alpha g + \beta h\right\rangle
+   =
+   \alpha \left\langle f,\,g\right\rangle + \beta \left\langle f,\,h\right\rangle.
+  \end{align*}"/></p>
+</div></li>
+<li><p class="first">Positive definiteness:</p>
+<div class="math">
+<p><img src="_images/math/abf43aad2648404aff3dae7fdd73bcf1162cfe6f.png" alt="\begin{align*}
+   \left\langle f,\,f\right\rangle \geq 0, \quad
+   \left\langle f,\,f\right\rangle = 0 \Longleftrightarrow f = 0.
+  \end{align*}"/></p>
+</div></li>
+</ol>
+<p>The usual three dimensional inner product satisfies the above, of
+course.</p>
+</div>
+<div class="section" id="examples-of-inner-products">
+<h2>Examples of inner products</h2>
+<p>There are many inner products in a function space. Let <img class="math" src="_images/math/9e2b196e9b7e57d1ec99f6534c581ea9759d2170.png" alt="\Omega"/> be
+a (open) subset of <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/> and
+<img class="math" src="_images/math/1c77a6bf5c7654626fe28e55a2321ef428a9200b.png" alt="h \colon \Omega \to \mathbb{R}_{\geq}"/> be a function satisfying</p>
+<div class="math">
+<p><img src="_images/math/268d5948d2d788d7a42e406625716f194651d6c6.png" alt="\begin{align*}
+ h(x) \geq 0, \quad
+ h \neq 0, \quad
+ 0 &lt; \int_\Omega h(x) dx &lt; \infty.\end{align*}"/></p>
+</div><p>Then the following is becomes an inner product:</p>
+<div class="math">
+<p><img src="_images/math/e57b9fde80f71038c6dc4bd4155f0ba586f3af12.png" alt="\begin{align*}
+ \left\langle f,\,g\right\rangle_{h}
+ :=
+ \int_{\Omega} f(x) g(x) h(x) dx.\end{align*}"/></p>
+</div><p>We show some examples of inner products.</p>
+<div class="math">
+<p><img src="_images/math/8a173b6afd413bdafbb159cd0350bd3f9d455c4a.png" alt="\left\langle f,\,g\right\rangle_1
+&amp;:=
+\int_{-1}^{1} f(x) g(x) dx, \\
+\left\langle f,\,g\right\rangle_2
+&amp;:=
+\int_{0}^{\infty} f(x) g(x) e^{-x} dx, \\
+\left\langle f,\,g\right\rangle_3
+&amp;:=
+\int_{\mathbb{R}} f(x) g(x) e^{-x^2} dx."/></p>
+</div><p>The above inner products are related to the Legendre polynomials,
+Laguerre polynomials, Hermite polynomials.</p>
+<p>Furthermore we take the following inner product.</p>
+<div class="math">
+<p><img src="_images/math/6a9674f7a0593731f77964d6fd574b093268a296.png" alt="\begin{align*}
+ \int_{- \pi}^{\pi} f(x) g(x) dx.\end{align*}"/></p>
+</div><p>Then we get the following expressions.</p>
+<div class="math">
+<p><img src="_images/math/d5dae36a74633f21d39caed9393b56904a1ef6be.png" alt="\frac{1}{\pi} \int_{-\pi}^{\pi} \sin nx \sin mx
+&amp;=
+\delta_{n,m}, \\
+\frac{1}{\pi} \int_{-\pi}^{\pi} \cos nx \cos mx
+&amp;=
+\delta_{n,m}, \\
+\frac{1}{\pi} \int_{-\pi}^{\pi} \cos nx \sin mx
+&amp;= 0."/></p>
+</div><p>This means that the functions <img class="math" src="_images/math/b33bc5115314d049c3fe5005bf592e8d1a51c71c.png" alt="\left\{\cos nx\right\}"/> and
+<img class="math" src="_images/math/cf21a10a6c78b76a5072ca8f76ffd9fcd72c67b4.png" alt="\left\{\sin nx\right\}"/> are orthogonal. This relates to the
+famous Fourier series expansion. This is used for wave analysis in
+physics.</p>
+</div>
+<div class="section" id="physics-for-the-space">
+<h2>Physics for the space <img class="math" src="_images/math/736833903c6c6704093bc56eb0ad277443fb29e5.png" alt="L^2 \left (\Omega\right)"/></h2>
+<p>The symbol <img class="math" src="_images/math/736833903c6c6704093bc56eb0ad277443fb29e5.png" alt="L^2 \left (\Omega\right)"/> in the title means the space
+of square integrable functions in the sense of Lebesgue on
+<img class="math" src="_images/math/9e2b196e9b7e57d1ec99f6534c581ea9759d2170.png" alt="\Omega"/>.</p>
+<p>We introduce a physical meaning of the space
+<img class="math" src="_images/math/736833903c6c6704093bc56eb0ad277443fb29e5.png" alt="L^2 \left (\Omega\right)"/>. <a class="footnote-reference" href="#id6" id="id3">[6]</a></p>
+<p>The elements of the space <img class="math" src="_images/math/736833903c6c6704093bc56eb0ad277443fb29e5.png" alt="L^2 \left (\Omega\right)"/> have finite
+energy. Let us consider a wave equation.</p>
+<div class="math">
+<p><img src="_images/math/46d254dfdcfb0b77c7d5b666e9f1672827f4afd6.png" alt="\begin{align*}
+ \frac{\partial^2 u}{\partial t^2}
+ =
+ \Delta u.\end{align*}"/></p>
+</div><p>The energy for its solution is written by</p>
+<div class="math">
+<p><img src="_images/math/e7ccdbf29ed934b8a541f71c66de9b2f8850a7c4.png" alt="\begin{align*}
+ E
+ =
+ \int_{\mathbb{R}^d} \left (\left (\nabla u\right)^2 + \left (\frac{\partial u}{\partial t}\right)^2\right)dx.\end{align*}"/></p>
+</div><p>We want to restrict solutions whose energy is finite since it is
+physically meaningless to consider infinite energy solutions. The
+elements of <img class="math" src="_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/> have finite energy, by definition, and hence it
+is the reason why the space <img class="math" src="_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/> is important in physics. To be
+precise our derived functions are in <img class="math" src="_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/>, so we have to consider
+a Sobolev space <img class="math" src="_images/math/ee500eed1910756eedebc53f0079d3aaf7a5753f.png" alt="H^1"/>.</p>
+<p>In quantum mechanics probabilistic interpretation forces us to consider
+functions in <img class="math" src="_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/>. Furthermore we have to impose more severe
+restriction to functions, i.e., the domain of Hamiltonians.</p>
+<p>Linear operators have their domains and, for Hamiltonians, their domains
+are functions having finite energy.</p>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[4]</a></td><td>In general we call it a norm of a vector. We can consider many norms
+for a vector since there are many senses of distances.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[5]</a></td><td>This is a definition of the Riemann integral.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[6]</a></td><td>To be precise the proper space is not <img class="math" src="_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/> but <img class="math" src="_images/math/ee500eed1910756eedebc53f0079d3aaf7a5753f.png" alt="H^1"/>.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, 相転移P.
+    </div>
+  </body>
+</html>

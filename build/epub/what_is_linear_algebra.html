@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>What is linear algebra?</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="integration.html" title="Integration"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">前へ</a> |</li>
+        <li><a href="index.html">理工系新入生のための線型代数入門--微分積分的観点から</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="what-is-linear-algebra">
+<h1>What is linear algebra?</h1>
+<p>Main targets of linear algebra are vectors and matrices. We learn them
+in high school but linear algebra in university mathematics has somewhat
+different flavor from one in high school. Furthermore linear algebra is
+difficult to imagine where we use it compared to calculus. So we first
+consider its different points and its usage in mathematics and physics.</p>
+<p>In high school we consider vectors as geometric objects. However we now
+consider them as algebraic objects, since they are ones in linear
+“algebra”! Our vectors are a generalized/abstract version of ones in
+high school. A vector needs not have direction nor length. Then, what
+properies should vectors have?</p>
+<div class="section" id="abstract-definition-of-vectors">
+<h2>Abstract definition of vectors</h2>
+<p>In the following we sometimes use the terms linear spaces or vector
+spaces. These words have the same meaning.</p>
+<p>Let <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/> be a field of real numbers: a real number is also
+called a scaler. A set <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> is called a if its elements have the
+following properties. Elements <img class="math" src="_images/math/2c390b9b0ab6eb5ac08386d3f6f8bbd751039a2b.png" alt="x, y, z \in L"/> are vectors and
+<img class="math" src="_images/math/a92777b86c1ef52fb75fa090b3884ed94c5a5e30.png" alt="a, b \in \mathbb{R}"/> are real numbers in the following
+expressions.</p>
+<ol class="arabic">
+<li><p class="first">Associativity:</p>
+<div class="math">
+<p><img src="_images/math/10365137ab0d3c34a1eed47c3174a44fa330c758.png" alt="\begin{align*}
+   \left (x + y\right) + z
+   =
+   x + \left (y + z\right), \quad \forall x, y, z \in L.
+  \end{align*}"/></p>
+</div></li>
+<li><p class="first">Commutativity of sum:</p>
+<div class="math">
+<p><img src="_images/math/d67dc8e0677dac9bc66d4f4a6706bf3c6b92f610.png" alt="\begin{align*}
+   x + y = y + x,  \quad \forall x, y \in L.
+  \end{align*}"/></p>
+</div></li>
+<li><p class="first">Existence of unit for sum: there is an element <img class="math" src="_images/math/4a2ce6d3a15564cf7e2b17466d4ed4a4645c75be.png" alt="0 \in L"/> such that</p>
+<div class="math">
+<p><img src="_images/math/c09259bf95162f2335545ebff495e0aab357a2c5.png" alt="\begin{align*}
+   x + 0 = x, \quad \forall x \in L.
+  \end{align*}"/></p>
+</div></li>
+<li><p class="first">Existence of an inverse element for sum: for any <img class="math" src="_images/math/801722c72258f841309f934b6d8fc03f927f5d0a.png" alt="x \in L"/> there is an element <img class="math" src="_images/math/2911c1595bae1f933f4d32aeed0359687e7b0297.png" alt="y \in L"/> such that</p>
+<div class="math">
+<p><img src="_images/math/7007d60e18294d6edb1c6f78f93a2cd30b0a07b5.png" alt="\begin{align*}
+   x + y = 0
+  \end{align*}"/></p>
+</div><p>for the above <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0"/>. In fact we can prove the uniqueness of an
+inverse element.</p>
+</li>
+<li><p class="first">Relation of scalers (real numbers) and vectors:</p>
+<div class="math">
+<p><img src="_images/math/9ab06c290c4241be068cd5797e29faa4bd982728.png" alt="a \cdot \left (x + y\right)
+&amp;=
+a \cdot x + a \cdot y, \\
+\left( ab \right) \cdot x
+&amp;=
+a \cdot \left( b x \right), \\
+\left (a + b \right) \cdot x
+&amp;=
+a \cdot x + b \cdot x,"/></p>
+</div></li>
+<li><p class="first">Multiplication law for a scaler unit in <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>:</p>
+<div class="math">
+<p><img src="_images/math/efbe4ccb211cec3858c4aa4c41a7c7a0bf7868d2.png" alt="\begin{align*}
+   1 \cdot x = x, \quad \forall x \in L.
+  \end{align*}"/></p>
+</div></li>
+</ol>
+<p>Important points are</p>
+<ol class="arabic simple">
+<li>vectors are summable and sum is commutative operation, and</li>
+<li>vectors and scalers satisfy some multiplication laws.</li>
+</ol>
+<p>The above properties hold for geometric vectors in high school, of
+course. Our purpose is different from it: we consider vectors as
+algebraic objects and we derive many interesting properites using
+(mainly) algebraic thinking!</p>
+</div>
+<div class="section" id="examples-of-linear-spaces">
+<h2>Examples of linear spaces</h2>
+<ol class="arabic simple">
+<li>The set of real numbers <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/> itself with scaler
+<img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>The set of complex numbers <img class="math" src="_images/math/568df917149216103d9ba89ab22426e9449fb883.png" alt="\mathbb{C}"/> itself with scaler
+<img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>The set of complex numbers <img class="math" src="_images/math/568df917149216103d9ba89ab22426e9449fb883.png" alt="\mathbb{C}"/> itself with scaler
+<img class="math" src="_images/math/568df917149216103d9ba89ab22426e9449fb883.png" alt="\mathbb{C}"/>.</li>
+<li>A plane <img class="math" src="_images/math/00a62d72646c467ae02878bc6dd7138e087a13c8.png" alt="\mathbb{R}^2"/> with scaler <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>A three dimensional space <img class="math" src="_images/math/ba438cedaa8f58c80eb239e792bd4cdeba1910ac.png" alt="\mathbb{R}^3"/> with scaler
+<img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>Higher dimensional space <img class="math" src="_images/math/48bb97d434ed10923b31178054fc265df6e2908b.png" alt="\mathbb{R}^d"/> (<img class="math" src="_images/math/c9223b9adfa7cef69dc0ed5fc86dd6a861a5bf75.png" alt="d \geq 4"/>) with
+scaler <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>Some subsets of (numerical) sequence, e.g., <img class="math" src="_images/math/0134af18ca53751c9f9ec73d48b7fa0ff8da9ea6.png" alt="c_0"/>,
+<img class="math" src="_images/math/d5a1ac46d46197c68f7c7ca141da6de37b718882.png" alt="c_{\infty}"/>, <img class="math" src="_images/math/d6f6bda40e4803e3e01aa90c8f1d736758a49b88.png" alt="\ell^2"/> with scaler <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>Some subsets of functions, e.g., <img class="math" src="_images/math/36b8638ca909c0ded2fb3d7273fb4e20f406fcbc.png" alt="C^k(\Omega)"/>,
+<img class="math" src="_images/math/9c3d35f64dbcd42e51e8a2363ad7f16ed3416469.png" alt="L^p \left (\Omega\right)"/>, <img class="math" src="_images/math/f2ac96da9df32537760fff94d4ca86aba546add6.png" alt="H^k \left (\Omega\right)"/>
+with scaler <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+<li>A set of linear operators with scaler <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/>.</li>
+</ol>
+<p>Today’s main targets are introduction to the last three items and its
+relation to calculus.</p>
+</div>
+<div class="section" id="examples-of-finite-but-higher-dimensional-spaces-than-three">
+<h2>Examples of finite, but higher dimensional spaces than three</h2>
+<p>We have many examples for higher dimensional objects in real world,
+e.g.,</p>
+<ol class="arabic simple">
+<li>(time evolution of) stock prices,</li>
+<li>players’ movement in soccer,</li>
+<li>computerized control in robots.</li>
+</ol>
+<p>For (time evolution of) stock prices, there are many lisiting companies
+and its time evolution is important in real world. This evolution is
+mathematically reprensetable in higher dimensional space picture.</p>
+<p>Other examples are also similar characterization. These are related to
+analytical mechanics in physics. Moreover analytical mechanics is
+closely related to geometry. See .</p>
+</div>
+<div class="section" id="function-as-a-vector">
+<h2>Function as a vector</h2>
+<p>First recall the definition of vectors in three dimension: letting
+<img class="math" src="_images/math/6457571158ac3e295aa4a0ef3c13bc5f8f9877dc.png" alt="f = (f(1), f(2), f(3))"/> and <img class="math" src="_images/math/8b09774d09b9fe6bbf0447001abae606ebd04bbf.png" alt="g = (g(1), g(2), g(3))"/> be
+three dimensional vectors then their sum <img class="math" src="_images/math/a90a3ccb41a092ad7346b88272cf2aab3fbe9903.png" alt="f + g"/> is defined by</p>
+<div class="math">
+<p><img src="_images/math/7d138f6259ec37b27154b861ad0c4f1ae615e241.png" alt="\begin{align*}
+ f + g
+ :=
+ \left (f\left (1\right) + g \left (1\right), f(2) + g(2), f(3) + g(3)\right).\end{align*}"/></p>
+</div><p>I.e., sum of vectors is defined by component-wise. Hence we also try to
+define a sum of functions as</p>
+<div class="math">
+<p><img src="_images/math/f0530268a8001de20e80643137cc696518d4023e.png" alt="\begin{align*}
+ f + g
+ :=
+ \left (f(x) + g(x), f(y) + g(y), \dots\right).\end{align*}"/></p>
+</div><p>In short we define a sum by</p>
+<div class="math">
+<p><img src="_images/math/c1fb7cbfc7923fa41456c4e92de48663b4239325.png" alt="\begin{align*}
+ \left (f + g\right) (x)
+ :=
+ f(x) + g(x).\end{align*}"/></p>
+</div><p>For scalar multiplication we set</p>
+<div class="math">
+<p><img src="_images/math/e0c66f674af88fa1442a109179e5ec99ec60d760.png" alt="\begin{align*}
+ \left (\alpha f\right) (x)
+ :=
+ \alpha f (x).\end{align*}"/></p>
+</div><p>Sum and scalar multiplication defined above satisfy the axioms of a
+linear space. Thus we conclude a space of functions is a linear
+one <a class="footnote-reference" href="#id3" id="id1">[2]</a>.</p>
+</div>
+<div class="section" id="function-spaces-examples-of-infinite-dimensional-spaces">
+<h2>Function spaces: examples of infinite dimensional spaces</h2>
+<p>We have infinitely many infinite dimensional objects. Examples are
+weather maps and wind direction maps.</p>
+<p>Take a point in a world map, and then there are infinitely many
+directions to blow wind. In classical point of view there are infinitely
+many space points, and hence there are infinitely many space points and
+directions of the wind are also infinitely many patterns.</p>
+<p>What do we represent this infinitely many probability of the wind in
+real world? We use functions in several variables,
+<img class="math" src="_images/math/60a0e159ccc39f288b670a64b5261aa2814ab229.png" alt="w(x,y,z,t) \in \mathbb{R}^3"/>. A value of a function
+<img class="math" src="_images/math/da53745b9248b219f0a34e0a20e140124c224a50.png" alt="w(x,y,z,t)"/> represents a direction of wind and its strength
+(length of a vector) at space-time point
+<img class="math" src="_images/math/e819ea6e1e476729999b1de8a5777707a8fefbd3.png" alt="\left (x, y, z, t\right)"/>. We always use this type of mathematics
+in physics.</p>
+<p>Furthermore there are infinitely many types of wind distribution, i.e.,
+we have infinitely many functions. For systematic thinking it is useful
+to think where functions live in. This is called a function space. There
+are many useful function spaces and we select a proper space as the
+situation demands.</p>
+<p>In this way, in mathematics we will encounter various types of spaces
+other than a three dimensional, geometric space. We consider spaces
+where functions live and ones where spaces itself live.</p>
+</div>
+<div class="section" id="linear-maps-functionals">
+<h2>Linear maps, functionals</h2>
+<p>We usually consider maps instead of functions in university mathematics.
+In fact a map is just a function whose domain and range are general
+sets. First we define a linear map and linear functionnal.</p>
+<p>Assume <img class="math" src="_images/math/3f22b669e4803ae525cf8120ca251e2eab025872.png" alt="L_1"/> and <img class="math" src="_images/math/e13a902eb6a24cf493a2732badd0d151fb4f7672.png" alt="L_2"/> are linear spaces. Then a function
+<img class="math" src="_images/math/c26cff857b9baab7db8ca134a67b5dacab7bbdda.png" alt="F \colon L_1 \to L_2"/> is called a . If <img class="math" src="_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> preserves
+linearity, i.e., <img class="math" src="_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> has a property</p>
+<div class="math">
+<p><img src="_images/math/04f08f4a5456f3cf2328a89945a66e5eb233c268.png" alt="\begin{align*}
+  F \left (\alpha f + \beta g\right)
+  =
+  \alpha F(f) + \beta F(g), \quad \alpha, \beta \in \mathbb{R}, f, g \in L_1,
+ \end{align*}"/></p>
+</div><p>then an operator <img class="math" src="_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> is called a .</p>
+<p>If <img class="math" src="_images/math/e13a902eb6a24cf493a2732badd0d151fb4f7672.png" alt="L_2"/> is <img class="math" src="_images/math/906fddead65545297c74bbc2ca83cd01f3f9ecc9.png" alt="\mathbb{R}"/> then <img class="math" src="_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> is usually called a
+. Furthermore <img class="math" src="_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> is called a if it is linear.</p>
+<p>Here are some examples.</p>
+<ol class="arabic">
+<li><p class="first">Coordinate maps: Let <img class="math" src="_images/math/5bef7b578dca49b1a1f46d996ab462d171404dce.png" alt="f = (f(1), f(2), \dots, f(d)) \in \mathbb{R}^d"/>. We write
+a vector <img class="math" src="_images/math/f09e3962ac507f3af0e804935d479259d3f84289.png" alt="f = (f_1, f_2, \dots, f_d)"/> as
+<img class="math" src="_images/math/8c6f0b301b65ee60b45ca9f1eb1ae743a072c3b8.png" alt="f = (f(1), f(2), \dots, f(d))"/> for later use. This is just a
+notational convention. Then we get functionals by</p>
+<div class="math">
+<p><img src="_images/math/4f5f46be41f3fe542c20f2dde90d8e2248d76e1c.png" alt="\begin{align*}
+    x_i \colon f \mapsto f(i).
+   \end{align*}"/></p>
+</div><p>This is a linear functional since this has a property</p>
+<div class="math">
+<p><img src="_images/math/98e4643ca1272e340c834be7b3f15cf34d9fabcf.png" alt="\begin{align*}
+    x_i \left (\alpha f + \beta g\right)
+    =
+    \alpha x_i \left (f\right) + \beta x_i \left (g\right).
+   \end{align*}"/></p>
+</div></li>
+<li><p class="first">Definite integrals: First we define a map <img class="math" src="_images/math/027f4a11d6090f9eac0ce2488df6384dad1263ea.png" alt="I"/> as</p>
+<div class="math">
+<p><img src="_images/math/ea746054712b7403b339321483401167f3e97c34.png" alt="\begin{align*}
+     I \colon
+     f \mapsto \int_{\mathbb{R}^d} f(x) dx \in \mathbb{R}.
+   \end{align*}"/></p>
+</div><p>This is a linear functional since this has a property</p>
+<div class="math">
+<p><img src="_images/math/76657185a8df12ad4acd8dcd29479de3fa3428c1.png" alt="\begin{align*}
+    I \left (\alpha f + \beta g\right)
+    =
+    \alpha I \left (f\right) + \beta I \left (g\right).
+   \end{align*}"/></p>
+</div></li>
+<li><p class="first">Another type of a definite integral:</p>
+<div class="math" id="equation-linear-algebra-and-calculus-4">
+<p><span class="eqno">(1)</span><img src="_images/math/dc8d843c653506e5bc04fe341cb43838a7874b8b.png" alt="\begin{align*}
+    E \colon
+    f \mapsto \int_{\mathbb{R}^d} \left (\left|\nabla f(x, t)\right|^2 + \left (\frac{\partial f(x, t)}{\partial t}\right)^2\right) dx.
+   \end{align*}"/></p>
+</div><p>This is a nonlinear functional. In physics this <img class="math" src="_images/math/fa2fa899f0afb05d6837885523503a2d4df434f9.png" alt="E"/> is called
+an energy functional.</p>
+</li>
+<li><p class="first">Differential operators: Define an operator as</p>
+<div class="math">
+<p><img src="_images/math/8baa3083053c747edf7aa9fe9ba2838ddfe729cd.png" alt="\begin{align*}
+    D \colon f \mapsto \frac{d}{dx} f.
+   \end{align*}"/></p>
+</div><p>This is a since it satisfies</p>
+<div class="math">
+<p><img src="_images/math/5caa7e120b5196ad4672970d1fd823fb5fe08dc7.png" alt="\begin{align*}
+    D \left (\alpha f + \beta g\right)
+    =
+    \alpha Df + \beta Dg.
+   \end{align*}"/></p>
+</div></li>
+</ol>
+<p>In this way we connects linear algebra with calculus. For analysis of
+nonlinear functionals we also need various linear spaces and some
+technique from linear algebra.</p>
+</div>
+<div class="section" id="eigenvalues-eigenvectors">
+<h2>Eigenvalues, eigenvectors</h2>
+<p>These are not learned explicitly in high school. However they sometimes
+appears in entrance exams.</p>
+<p>Let <img class="math" src="_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> be a linear operator on a linear space <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/>. A real
+number <img class="math" src="_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> resp. a vector <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f"/> are called an resp. if
+they satisfy</p>
+<div class="math">
+<p><img src="_images/math/3f0b0ca91c353fbb8d3c6b0ae7fe4891e7049e9c.png" alt="\begin{align*}
+  A f = \lambda f, \quad
+  f \neq 0.
+ \end{align*}"/></p>
+</div><p>Here are examples.</p>
+<p>Let <img class="math" src="_images/math/0a0202dacc2785f392dfbc2e2a72576bf5b8289a.png" alt="D^2"/> be a second order differential operator (this is linear)
+with respect to time and consider</p>
+<div class="math">
+<p><img src="_images/math/9ba7e175954085e86fb72af61411012a9f39cc67.png" alt="\begin{align*}
+   m D^2 x
+   =
+   -k x,
+  \end{align*}"/></p>
+</div><p>i.e.,</p>
+<div class="math">
+<p><img src="_images/math/800a2baeba75f1484422b12060c9f237a440d00a.png" alt="\begin{align*}
+   m \frac{d^2 x (t)}{dt^2}
+   =
+   -k x(t).
+  \end{align*}"/></p>
+</div><p>This is an equation of motion for a spring in physics. A solution
+(eigenvector) is</p>
+<div class="math">
+<p><img src="_images/math/40767ee3f99f1b7c173c1ea06df6cb2e71e747ca.png" alt="\begin{align*}
+   x(t)
+   =
+   A \sin \left (\omega t + \theta\right), \quad
+   \omega
+   =
+   \sqrt{\frac{k}{m}}.
+  \end{align*}"/></p>
+</div><p>We can write a solution using a celebrated Euler’s formula:</p>
+<div class="math">
+<p><img src="_images/math/fdf3328040054ecd04bdf17caff1bfd9283ad9f5.png" alt="\begin{align*}
+   x(t)
+   =
+   A e^{i \left (\omega t + \theta\right)}.
+  \end{align*}"/></p>
+</div><p>Consideration of eigenvalues for a differential equation is somewhat
+difficult and we omit it. See, e.g., for details.</p>
+</div>
+<div class="section" id="mathematical-application-of-linear-algebra">
+<h2>Mathematical application of linear algebra</h2>
+<p>There many branches related to linear algebra. Here are some examples.
+See also .</p>
+<ol class="arabic simple">
+<li>Theory of Lie group and its representation theory.</li>
+<li>General algebra.</li>
+<li>Algebraic geometry.</li>
+<li>Analysis of differential equations.</li>
+<li>Functional analysis.</li>
+<li>Operator algebra.</li>
+</ol>
+</div>
+<div class="section" id="physical-application">
+<h2>Physical application</h2>
+<p>There many branches related to linear algebra in physics, too. See also
+.</p>
+<p>For example, in quantum mechanics, one of the most fundamental physical
+theory, linearity is important and fundamental. We say “a superposition
+principle valids for wave functions,” and this “superposition” means
+linearity.</p>
+<p>In high school we learn a superposition principle for wave. This holds
+because our wave equation is linear in high school.</p>
+</div>
+<div class="section" id="linear-algebra-and-statistics">
+<h2>Linear algebra and statistics</h2>
+<p>We use statistics in many branches, including humanities and sociology.
+E.g., natural language processing has many humanity and infomation
+theoretic elements. This area needs broad knowledge including
+probability and statistics. Interested readers should learn, e.g.,
+principal component analysis.</p>
+</div>
+<div class="section" id="linear-algebra-and-computer-science">
+<h2>Linear algebra and computer science</h2>
+<p>We have applications in computer science. In numerical analysis we use
+linear algebra. See the code theoery or Google’s page rank for real
+world application. <a class="footnote-reference" href="#id4" id="id2">[3]</a></p>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[2]</a></td><td>A function space is linear if an image of its elements is a linear
+space. Function spaces can be non-linear, e.g., an image of its
+elements is a manifold or general set.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[3]</a></td><td>See, e.g, my movies, <a class="reference external" href="http://www.nicovideo.jp/watch/sm7599426">http://www.nicovideo.jp/watch/sm7599426</a>,
+<a class="reference external" href="http://www.nicovideo.jp/watch/sm10684363">http://www.nicovideo.jp/watch/sm10684363</a>.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, 相転移P.
+    </div>
+  </body>
+</html>
