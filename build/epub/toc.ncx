@@ -31,25 +31,25 @@
         <navLabel>
           <text>自己紹介</text>
         </navLabel>
-        <content src="preface.html#id3" />
+        <content src="preface.html#id2" />
       </navPoint>
       <navPoint id="navPoint5" playOrder="4">
         <navLabel>
           <text>活動目的</text>
         </navLabel>
-        <content src="preface.html#id6" />
+        <content src="preface.html#id5" />
       </navPoint>
       <navPoint id="navPoint6" playOrder="5">
         <navLabel>
           <text>有料出版の理由</text>
         </navLabel>
-        <content src="preface.html#id8" />
+        <content src="preface.html#id7" />
       </navPoint>
       <navPoint id="navPoint7" playOrder="6">
         <navLabel>
           <text>本の内容</text>
         </navLabel>
-        <content src="preface.html#id9" />
+        <content src="preface.html#id8" />
       </navPoint>
     </navPoint>
     <navPoint id="navPoint8" playOrder="7">
@@ -263,9 +263,9 @@
       </navPoint>
       <navPoint id="navPoint43" playOrder="35">
         <navLabel>
-          <text>Mathematical formulatrion: functionals, linear operators</text>
+          <text>Mathematical formulation: functionals, linear operators</text>
         </navLabel>
-        <content src="variational_problem_mixture_of_differentiation_and_integration.html#mathematical-formulatrion-functionals-linear-operators" />
+        <content src="variational_problem_mixture_of_differentiation_and_integration.html#mathematical-formulation-functionals-linear-operators" />
       </navPoint>
     </navPoint>
     <navPoint id="navPoint44" playOrder="36">

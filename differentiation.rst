@@ -1,6 +1,6 @@
-==============
+===============
 Differentiation
-==============
+===============
 
 Taylor expansion
 ================
@@ -160,10 +160,10 @@ Physics and representation theory
 Representation theory is also important for theory of relativity and
 relativistic quantum field theory.
 
-A variational problem is an infinite dimensional version of diffrential
+A variational problem is an infinite dimensional version of differential
 theory. This is important and interesting in both physics and
 mathematics.
 
 It is a mathematically and physically famous problem that why soap
 bubble becomes round. This type of problems is called a geometric
-variational problem. See for details.
+variational problem.

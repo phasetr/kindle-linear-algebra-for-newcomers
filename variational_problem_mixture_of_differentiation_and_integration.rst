@@ -19,15 +19,15 @@ A similar physical problem is discussed in high school: optics,
 refraction. In society this is related to how to design optical fibers
 to reduce light-loss.
 
-Mathematical formulatrion: functionals, linear operators
+Mathematical formulation: functionals, linear operators
 ========================================================
 
 We formulate the above problem mathematically. In usual we make a some
 **functional** and search a function which optimize, i.e., minimize or
 maximize the value of it. In this procedure we differentiate a
-functional by functions, and this is a variational derivatice.
+functional by functions, and this is a variational derivative.
 
-Recall an energy functional (:eq:`linear-algebra-and-calculus-4`). This
+Recall an energy functional. This
 energy functional is a mixed type functional of differential and
 integral. We often face this type of functionals in theory of partial
 differential equations, in particular, quantum mechanics and we need a

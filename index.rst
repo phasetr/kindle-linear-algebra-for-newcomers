@@ -9,7 +9,7 @@
 
 :出版社: 相転移プロダクション
 
-:無料メルマガ登録: http://goo.gl/o0rK1T
+:無料メルマガ登録: http://phasetr.com/members/formadd/
 
 :サイト: http://phasetr.com
 

@@ -12,7 +12,7 @@ In high school we consider vectors as geometric objects. However we now
 consider them as algebraic objects, since they are ones in linear
 “algebra”! Our vectors are a generalized/abstract version of ones in
 high school. A vector needs not have direction nor length. Then, what
-properies should vectors have?
+properties should vectors have?
 
 Abstract definition of vectors
 ==============================
@@ -21,7 +21,7 @@ In the following we sometimes use the terms linear spaces or vector
 spaces. These words have the same meaning.
 
 Let :math:`\mathbb{R}` be a field of real numbers: a real number is also
-called a scaler. A set :math:`L` is called a if its elements have the
+called a scaler. A set :math:`L` is called a linear space if its elements have the
 following properties. Elements :math:`x, y, z \in L` are vectors and
 :math:`a, b \in \mathbb{R}` are real numbers in the following
 expressions.
@@ -93,7 +93,7 @@ Important points are
 
 The above properties hold for geometric vectors in high school, of
 course. Our purpose is different from it: we consider vectors as
-algebraic objects and we derive many interesting properites using
+algebraic objects and we derive many interesting properties using
 (mainly) algebraic thinking!
 
 Examples of linear spaces
@@ -116,10 +116,10 @@ Examples of linear spaces
 #. Higher dimensional space :math:`\mathbb{R}^d` (:math:`d \geq 4`) with
    scaler :math:`\mathbb{R}`.
 
-#. Some subsets of (numerical) sequence, e.g., :math:`c_0`,
+#. Some subsets of the set of (numerical) sequences, e.g., :math:`c_0`,
    :math:`c_{\infty}`, :math:`\ell^2` with scaler :math:`\mathbb{R}`.
 
-#. Some subsets of functions, e.g., :math:`C^k(\Omega)`,
+#. Some subsets of the set of functions, e.g., :math:`C^k(\Omega)`,
    :math:`L^p \left (\Omega\right)`, :math:`H^k \left (\Omega\right)`
    with scaler :math:`\mathbb{R}`.
 
@@ -140,13 +140,13 @@ e.g.,
 
 #. computerized control in robots.
 
-For (time evolution of) stock prices, there are many lisiting companies
+For (time evolution of) stock prices, there are many listing companies
 and its time evolution is important in real world. This evolution is
-mathematically reprensetable in higher dimensional space picture.
+mathematically representable in higher dimensional space picture.
 
 Other examples are also similar characterization. These are related to
 analytical mechanics in physics. Moreover analytical mechanics is
-closely related to geometry. See .
+closely related to geometry.
 
 Function as a vector
 ====================
@@ -209,7 +209,7 @@ What do we represent this infinitely many probability of the wind in
 real world? We use functions in several variables,
 :math:`w(x,y,z,t) \in \mathbb{R}^3`. A value of a function
 :math:`w(x,y,z,t)` represents a direction of wind and its strength
-(length of a vector) at space-time point
+(length of a vector) at a space-time point
 :math:`\left (x, y, z, t\right)`. We always use this type of mathematics
 in physics.
 
@@ -228,10 +228,10 @@ Linear maps, functionals
 
 We usually consider maps instead of functions in university mathematics.
 In fact a map is just a function whose domain and range are general
-sets. First we define a linear map and linear functionnal.
+sets. First we define a linear map and linear functional.
 
 Assume :math:`L_1` and :math:`L_2` are linear spaces. Then a function
-:math:`F \colon L_1 \to L_2` is called a . If :math:`F` preserves
+:math:`F \colon L_1 \to L_2` is called a map or operator. If :math:`F` preserves
 linearity, i.e., :math:`F` has a property
 
 .. math::
@@ -242,10 +242,10 @@ linearity, i.e., :math:`F` has a property
      \alpha F(f) + \beta F(g), \quad \alpha, \beta \in \mathbb{R}, f, g \in L_1,
     \end{align*}
 
-then an operator :math:`F` is called a .
+then an operator :math:`F` is called a linear operator.
 
-If :math:`L_2` is :math:`\mathbb{R}` then :math:`F` is usually called a
-. Furthermore :math:`F` is called a if it is linear.
+If :math:`L_2` is :math:`\mathbb{R}` then :math:`F` is usually called a functional.
+Furthermore :math:`F` is called a linear functional if it is linear.
 
 Here are some examples.
 
@@ -310,7 +310,7 @@ Here are some examples.
           D \colon f \mapsto \frac{d}{dx} f.
          \end{align*}
 
-   This is a since it satisfies
+   This is a linear operator since it satisfies
 
    .. math::
 
@@ -331,7 +331,7 @@ These are not learned explicitly in high school. However they sometimes
 appears in entrance exams.
 
 Let :math:`A` be a linear operator on a linear space :math:`L`. A real
-number :math:`\lambda` resp. a vector :math:`f` are called an resp. if
+number :math:`\lambda` resp. a vector :math:`f` are called an eigenvalue resp. eigenvector if
 they satisfy
 
 .. math::
@@ -389,7 +389,7 @@ We can write a solution using a celebrated Euler’s formula:
      \end{align*}
 
 Consideration of eigenvalues for a differential equation is somewhat
-difficult and we omit it. See, e.g., for details.
+difficult and we omit it.
 
 Mathematical application of linear algebra
 ==========================================
@@ -412,8 +412,7 @@ See also .
 Physical application
 ====================
 
-There many branches related to linear algebra in physics, too. See also
-.
+There many branches related to linear algebra in physics, too.
 
 For example, in quantum mechanics, one of the most fundamental physical
 theory, linearity is important and fundamental. We say “a superposition
@@ -427,7 +426,7 @@ Linear algebra and statistics
 =============================
 
 We use statistics in many branches, including humanities and sociology.
-E.g., natural language processing has many humanity and infomation
+E.g., natural language processing has many humanity and information
 theoretic elements. This area needs broad knowledge including
 probability and statistics. Interested readers should learn, e.g.,
 principal component analysis.
@@ -436,7 +435,7 @@ Linear algebra and computer science
 ===================================
 
 We have applications in computer science. In numerical analysis we use
-linear algebra. See the code theoery or Google’s page rank for real
+linear algebra. See the code theory or Google’s page rank for real
 world application. [3]_
 
 .. [2]

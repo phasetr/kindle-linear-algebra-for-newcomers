@@ -121,7 +121,7 @@ ones.
     =
     \sum_{k=1}^{\infty} f(k)g(k).\end{align*}
 
-A infinite dimensional vector :math:`f = (f(1), f(2), \dots)` can be
+An infinite dimensional vector :math:`f = (f(1), f(2), \dots)` can be
 viewed as a sequence. In quantum mechanics we use sequences and matrices
 living in an infinite dimensional space when considering Heisenberg’s
 matricial mechanics.
@@ -223,7 +223,7 @@ a (open) subset of :math:`\mathbb{R}` and
     h \neq 0, \quad
     0 < \int_\Omega h(x) dx < \infty.\end{align*}
 
-Then the following is becomes an inner product:
+Then the following becomes an inner product:
 
 .. math::
 
@@ -304,7 +304,7 @@ The energy for its solution is written by
     \int_{\mathbb{R}^d} \left (\left (\nabla u\right)^2 + \left (\frac{\partial u}{\partial t}\right)^2\right)dx.\end{align*}
 
 We want to restrict solutions whose energy is finite since it is
-physically meaningless to consider infinite energy solutions. The
+physically meaningless to consider solutions with infinite energy. The
 elements of :math:`L^2` have finite energy, by definition, and hence it
 is the reason why the space :math:`L^2` is important in physics. To be
 precise our derived functions are in :math:`L^2`, so we have to consider
