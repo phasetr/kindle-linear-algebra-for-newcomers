@@ -108,7 +108,7 @@ If you want to consider one in :math:`\mathbb{C}^d` you should set
 
 because it is desirable that a length (norm) of a vector is properly
 defined, i.e.,
-:math:`\left\Vert f\right\Vert^2 := \left\langle f,\,g\right\rangle \geq 0`.
+:math:`\left\Vert f\right\Vert^2 := \left\langle f,\,f\right\rangle \geq 0`.
 
 We take a limit :math:`d \to \infty`. We face a problem whether a series
 converges or not, but we can overcome this by considering converging
