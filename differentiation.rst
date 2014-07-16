@@ -21,7 +21,7 @@ lead
    &=
    (x - x_0) f'(x_0) + \left[- \frac{(x-y)^2}{2} f^{(2)}(y)\right]_{x_0}^x + \int_{x_0}^x \frac{(x - y)^2}{2} f^{(3)} (y)dy. \\
    &=
-   (x - x_0) f'(x_0) + \frac{(x-y)^2}{2} f^{(2)}(x_0) + \int_{x_0}^x \frac{(x - y)^2}{2} f^{(3)} (y)dy.
+   (x - x_0) f'(x_0) + \frac{(x-x_0)^2}{2} f^{(2)}(x_0) + \int_{x_0}^x \frac{(x - y)^2}{2} f^{(3)} (y)dy.
 
 Further iteration leads the following Taylor’s theorem.
 
@@ -127,8 +127,12 @@ Then the above solutions are
    \begin{align*}
     f_k(x)
     =
-    e^{ikx}, \quad
-    k \in \mathbb{Z}.\end{align*}
+    e^{ikx}\end{align*}
+
+for each :math:`k \in \mathbb{Z}`.
+Note that computation shows the set of
+eigenvalues :math:`\{k\}` is, in fact, :math:`\mathbb{Z}` and that
+the above solutions :math:`\{f_k\}` are the eigenfunctions of each eigenequation :math:`p f_k = k f_k`.
 
 Euler’s formula says
 

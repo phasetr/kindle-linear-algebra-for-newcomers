@@ -212,9 +212,10 @@ course.
 Examples of inner products
 ==========================
 
-There are many inner products in a function space. Let :math:`\Omega` be
-a (open) subset of :math:`\mathbb{R}` and
-:math:`h \colon \Omega \to \mathbb{R}_{\geq}` be a function satisfying
+There are many inner products in a function space.
+Denote the set of nonnegative real numbers as :math:`\mathbb{R}_{\geq 0}`.
+Let :math:`\Omega` be a (open) subset of :math:`\mathbb{R}` and
+:math:`h \colon \Omega \to \mathbb{R}_{\geq 0}` be a function satisfying
 
 .. math::
 

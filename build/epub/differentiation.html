@@ -38,7 +38,7 @@
 differentiable. Fundamental theorem of calculus and integration by parts
 lead</p>
 <div class="math">
-<p><img src="_images/math/9853971d1e099523421273bdde30041a284568e5.png" alt="f(x) - f(x_0)
+<p><img src="_images/math/007da8e2ca181ec01225c61cddc61581400e573f.png" alt="f(x) - f(x_0)
 &amp;=
 \int_{x_0}^{x} f'(y) dy
 =
@@ -48,7 +48,7 @@ lead</p>
 &amp;=
 (x - x_0) f'(x_0) + \left[- \frac{(x-y)^2}{2} f^{(2)}(y)\right]_{x_0}^x + \int_{x_0}^x \frac{(x - y)^2}{2} f^{(3)} (y)dy. \\
 &amp;=
-(x - x_0) f'(x_0) + \frac{(x-y)^2}{2} f^{(2)}(x_0) + \int_{x_0}^x \frac{(x - y)^2}{2} f^{(3)} (y)dy."/></p>
+(x - x_0) f'(x_0) + \frac{(x-x_0)^2}{2} f^{(2)}(x_0) + \int_{x_0}^x \frac{(x - y)^2}{2} f^{(3)} (y)dy."/></p>
 </div><p>Further iteration leads the following Taylor’s theorem.</p>
 <div class="math">
 <p><img src="_images/math/9a901498dad1b7b548055f14ec8e13b93bb9a05e.png" alt="\begin{align*}
@@ -123,12 +123,15 @@ f(-\pi)
 f(\pi)."/></p>
 </div><p>Then the above solutions are</p>
 <div class="math">
-<p><img src="_images/math/ef6e2500a6090a54ea623853a844fa6c0127e53c.png" alt="\begin{align*}
+<p><img src="_images/math/762cd99094f8e5a9598d66c4ed251222b0b48a2a.png" alt="\begin{align*}
  f_k(x)
  =
- e^{ikx}, \quad
- k \in \mathbb{Z}.\end{align*}"/></p>
-</div><p>Euler’s formula says</p>
+ e^{ikx}\end{align*}"/></p>
+</div><p>for each <img class="math" src="_images/math/29238f408d8cb5806f06cc03446dde0084ffe09d.png" alt="k \in \mathbb{Z}"/>.
+Note that computation shows the set of
+eigenvalues <img class="math" src="_images/math/6bdd5cd1b6444d39e8ed2a589cbf9c408323d6ed.png" alt="\{k\}"/> is, in fact, <img class="math" src="_images/math/d4023589a374e5b4a1bc6063d887aec205e0d3e0.png" alt="\mathbb{Z}"/> and that
+the above solutions <img class="math" src="_images/math/b7758f57940f81afa0d9d94cdfaddcb17c68cb9e.png" alt="\{f_k\}"/> are the eigenfunctions of each eigenequation <img class="math" src="_images/math/f888e18377dbed53f672d3217ff7728bb6f9b6c5.png" alt="p f_k = k f_k"/>.</p>
+<p>Euler’s formula says</p>
 <div class="math">
 <p><img src="_images/math/53ac8818b4faa19977adbad3a82220ed0e9aa025.png" alt="\begin{align*}
  e^{ikx}
